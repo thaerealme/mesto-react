@@ -19,7 +19,7 @@ function Main (props) {
     api.getInitialCards()
     .then (cardsList => setCards(cardsList))
     .catch (err => console.log(err))
-  })
+  }, [])
 
   return (
     <main className="content">
